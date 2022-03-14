@@ -1,0 +1,22 @@
+$primaryWhite: #FFFFFF;
+$primaryBlack: #262626;
+$primaryGrey: #878787;
+$primaryGrey_light: #DEDEDE;
+$primaryPink: #FDAAA2;
+$primaryBlue: #70D4F4;
+$primaryBackground: #F8F8F8;
+
+@mixin font($size: 14) {
+  font-size: ($size / 14) + rem;
+}
+
+@mixin hover {
+  @media (hover: hover) {
+      &:hover,
+      // &:focus,
+      // &:focus-visible,
+      &:active {
+          @content;
+      }
+  }
+}

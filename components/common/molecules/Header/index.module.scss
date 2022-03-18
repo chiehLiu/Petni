@@ -1,0 +1,22 @@
+  @import '../../../../styles/foundation.scss';
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    margin: 12px auto 12px 87px;
+  }
+
+  .navigator {
+    display: flex;
+    margin: 14.27px 80px 14.27px auto;
+
+    div {
+      @include hover {
+          color: $primaryPink;
+          cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+@import '../../../../styles/foundation.scss';
+
+.title {
+  @include Headline_CN ;
+}

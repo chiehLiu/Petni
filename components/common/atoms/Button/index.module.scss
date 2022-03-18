@@ -1,0 +1,12 @@
+@import '../../../../styles/foundation.scss';
+
+.button {
+  @include Body_CN;
+  background-color: $primaryWhite;
+  border-radius: 24px;
+  height: 90px;
+  width: 90px;
+  border: none;
+  margin: 0 5px;
+  box-shadow: 0px 2px 7px rgba(10, 10, 10, 0.07);
+}

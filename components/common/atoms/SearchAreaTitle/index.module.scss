@@ -1,5 +1,7 @@
 @import '../../../../styles/foundation.scss';
 
 .title {
+  display: inline-block;
   @include Headline_CN ;
+  margin: 9px 0 4px;
 }

@@ -127,3 +127,10 @@ $primaryBackground_sorter: #fafafa;
 
   color: #000000;
 }
+
+@mixin shadow_filter {
+/* shadow_filter */
+
+background: #C4C4C4;
+box-shadow: 0px 2px 7px rgba(10, 10, 10, 0.07);
+}

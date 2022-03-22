@@ -21,7 +21,7 @@ const Header: FC = () => {
         <div>
           <Image src={home} alt="Home_btn"/>
         </div>
-        <div>123
+        <div>
           <Image src={favorite} alt="favorites_btn"/>  
         </div>
         <div>

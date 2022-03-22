@@ -1,0 +1,49 @@
+@import '../../../../styles/foundation.scss';
+
+.photo_container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .toplayer {
+    position: absolute;
+    top: 19.67%;
+    bottom: 22.58%;
+    width: 287.84px;
+    height: 461.96px;
+    z-index: 5;
+    background-color: #c7cc;
+    border: 12px solid $primaryWhite;
+    // filter: drop-shadow(-6px 9px 11px rgba(0, 0, 0, 0.25));
+    border-radius: 32px;
+    transform: matrix(1, -0.05, 0.05, 1, 0, 0);
+  }
+
+  .baselayer_one {
+    position: absolute;
+    top: 14.38%;
+    bottom: 31.85%;
+    width: 253.74px;
+    height: 430.24px;
+    z-index: 4;
+    background-color: #ff44;
+    // box-shadow: 0px 9px 11px rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+    transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
+  }
+
+  .baselayer_two {
+    position: absolute;
+    top: 27.88%;
+    bottom: 26.81%;
+    width: 231.97px;
+    height: 402.48px;
+    z-index: 3;
+    background-color: #c3cc;
+    // box-shadow: 0px 4px 24px rgba(10, 10, 10, 0.25);
+    border-radius: 32px;
+    transform: matrix(0.96, 0.29, -0.29, 0.96, 0, 0);
+  }
+}

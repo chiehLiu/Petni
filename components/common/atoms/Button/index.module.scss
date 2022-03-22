@@ -9,4 +9,10 @@
   border: none;
   margin: 0 5px;
   box-shadow: 0px 2px 7px rgba(10, 10, 10, 0.07);
+
+  @include hover {
+    color: $primaryWhite;
+    background-color: $primaryBlack;
+    cursor: pointer;
+  }
 }

@@ -30,7 +30,7 @@ $primaryBackground_sorter: #fafafa;
   @include font(14);
   line-height: 21px;
   /* identical to box height, or 150% */
-  color: #000000;
+  color: $primaryBlack;
 }
 
 @mixin Body_CN {
@@ -41,7 +41,7 @@ $primaryBackground_sorter: #fafafa;
   @include font(14);
   line-height: 21px;
   /* identical to box height, or 150% */
-  color: #000000;
+  color: $primaryBlack;
 }
 
 @mixin Headline_CN {
@@ -54,7 +54,7 @@ $primaryBackground_sorter: #fafafa;
   line-height: 24px;
   /* identical to box height, or 150% */
 
-  color: #000000;
+  color: $primaryBlack;
 }
 
 @mixin Headline_EN {
@@ -67,7 +67,7 @@ $primaryBackground_sorter: #fafafa;
   line-height: 24px;
   /* identical to box height, or 150% */
 
-  color: #000000;
+  color: $primaryBlack;
 }
 
 @mixin Title_CN_bold {
@@ -82,7 +82,7 @@ $primaryBackground_sorter: #fafafa;
 
   letter-spacing: 0.374px;
 
-  color: #000000;
+  color: $primaryBlack;
 }
 
 @mixin Title_EN {
@@ -97,7 +97,7 @@ $primaryBackground_sorter: #fafafa;
 
   letter-spacing: 0.374px;
 
-  color: #000000;
+  color: $primaryBlack;
 }
 
 @mixin Caption_CN {
@@ -110,7 +110,7 @@ $primaryBackground_sorter: #fafafa;
   line-height: 21px;
   /* identical to box height, or 175% */
 
-  color: #000000;
+  color: $primaryBlack;
 }
 
 @mixin Title_CN_normal {
@@ -125,7 +125,7 @@ $primaryBackground_sorter: #fafafa;
 
   letter-spacing: 0.374px;
 
-  color: #000000;
+  color: $primaryBlack;
 }
 
 @mixin shadow_filter {

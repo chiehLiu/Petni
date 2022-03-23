@@ -1,5 +1,5 @@
-import SearchAreaTitle from '../../atoms/SearchAreaTitle';
-import Button from '../../atoms/Button';
+import SearchAreaTitle from '../../atoms/SearchAreaTitle/SearchAreaTitle';
+import Button from '../../atoms/Button/Button';
 
 import styles from './index.module.scss';
 

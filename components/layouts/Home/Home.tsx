@@ -1,6 +1,6 @@
-import Header from '../../common/molecules/Header';
+import Header from '../../common/molecules/Header/Header';
 import SearchArea from '../../common/molecules/SearchArea';
-import PhotoArea from '../../common/molecules/PhotoArea';
+import PhotoArea from '../../common/molecules/PhotoArea/PhotoArea';
 import OtherArea from '../../common/molecules/OtherArea';
 
 import styles from './index.module.scss';

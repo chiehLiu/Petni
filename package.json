@@ -9,11 +9,7 @@
     "lint": "next lint",
     "format": "prettier --check .",
     "format:write": "prettier --write .",
-    "type-check": "tsc",
-    "start:watch": "(node-sass -w --output-style compressed Components -o Components) & (node-sass -w --output-style compressed styles -o styles)",
-    "watch:component": "node-sass -w --output-style compressed components -o components",
-    "watch:styles": "node-sass -w --output-style compressed styles -o styles",
-    "compile": "node-sass --output-style compressed components -o components && node-sass --output-style compressed styles -o styles"
+    "type-check": "tsc"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.0",

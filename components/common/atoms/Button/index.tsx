@@ -12,7 +12,7 @@ type ButtonProps = {
 const Button: FC<ButtonProps> = ({ className = '', content = '', onClick = () => {} }) => {
   return (
     <button
-      className={classnames( styles.button )}
+      className={classnames( styles.button, )}
       onClick={onClick}
     >
       {content}

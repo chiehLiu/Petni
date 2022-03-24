@@ -3,7 +3,7 @@ import SearchArea from '../../common/molecules/SearchArea';
 import PhotoArea from '../../common/molecules/PhotoArea/PhotoArea';
 import OtherArea from '../../common/molecules/OtherArea';
 
-import styles from './index.module.scss';
+import styles from './Home.module.scss';
 const Home = () => {
   return (
     <div className={styles.container}>

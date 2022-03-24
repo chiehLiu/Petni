@@ -1,7 +1,7 @@
 import SearchAreaTitle from '../../atoms/SearchAreaTitle/SearchAreaTitle';
 import Button from '../../atoms/Button/Button';
 
-import styles from './index.module.scss';
+import styles from './SearchArea.module.scss';
 
 const SearchArea = () => {
   return (

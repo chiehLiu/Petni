@@ -9,7 +9,7 @@ import rescue from '../../../../public/Header/rescue.svg';
 import hospital from '../../../../public/Header/hospital.svg';
 
 
-import styles from './index.module.scss';
+import styles from './Header.module.scss';
 
 const Header: FC = () => {
   return (

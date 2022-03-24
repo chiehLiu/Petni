@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import styles from './index.module.scss';
+import styles from './PhotoArea.module.scss';
 
 const PhotoArea: FC = () => {
   return (

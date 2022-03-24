@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import classnames from 'classnames';
 
-import styles from './index.module.scss';
+import styles from './Button.module.scss';
 
 type ButtonProps = {
   content: string;

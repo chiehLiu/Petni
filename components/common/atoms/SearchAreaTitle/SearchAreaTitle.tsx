@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import classnames from 'classnames';
 
-import styles from './index.module.scss';
+import styles from './SearchAreaTitle.module.scss';
 
 type titleProps = {
   className?: string;

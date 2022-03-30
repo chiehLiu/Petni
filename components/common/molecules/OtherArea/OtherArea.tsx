@@ -1,4 +1,4 @@
-import PetCard from '../../atoms/PetCard/';
+import PetCard from '../../atoms/CardPet';
 
 import styles from './OtherArea.module.scss';
 

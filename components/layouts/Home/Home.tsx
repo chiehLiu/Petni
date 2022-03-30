@@ -3,6 +3,8 @@ import SearchArea from '../../common/molecules/SearchArea';
 import PhotoArea from '../../common/molecules/PhotoArea/PhotoArea';
 import OtherArea from '../../common/molecules/OtherArea';
 
+import PhotoAreaImage from '../../../public/PhotoArea/PhotoAreaImage.svg'
+
 import styles from './Home.module.scss';
 const Home = () => {
   return (
@@ -11,7 +13,7 @@ const Home = () => {
       <div className={styles.content_container}>
         <SearchArea />
         <div className={styles.content_area}>
-          <PhotoArea />
+          <PhotoArea src={PhotoAreaImage} alt={PhotoAreaImage}/>
           <OtherArea />
         </div>
       </div>

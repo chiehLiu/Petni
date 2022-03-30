@@ -1,12 +1,20 @@
 import { FC } from 'react';
+import Image from 'next/image';
 
 import styles from './PhotoArea.module.scss';
 
-const PhotoArea: FC = () => {
+type topLayerProps = {
+  src: string,
+  alt: string
+}
+
+const PhotoArea: FC <topLayerProps>= ({ src='', alt=''}) => {
   return (
     <>
       <div className={styles.photo_container}>
-        <div className={styles.toplayer}></div>
+        <div className={styles.toplayer}>
+          <Image src={src} alt={alt} />
+        </div>
         <div className={styles.baselayer_one}></div>
         <div className={styles.baselayer_two}></div>
       </div>

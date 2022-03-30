@@ -6,11 +6,12 @@
 
 .content_container {
   display: flex;
+  height: calc(100vh - 77.53px);
 }
 
 .content_area {
   display: flex;
   flex-direction: column;
-  margin:auto;
+  width:calc(100vw - 413px);
   background-color: $primaryBackground;
 }

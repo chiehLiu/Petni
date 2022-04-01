@@ -5,7 +5,7 @@ import styles from './PhotoArea.module.scss';
 
 type topLayerProps = {
   src: string,
-  alt: string
+  alt: string,
 }
 
 const PhotoArea: FC <topLayerProps>= ({ src='', alt=''}) => {
@@ -13,7 +13,7 @@ const PhotoArea: FC <topLayerProps>= ({ src='', alt=''}) => {
     <>
       <div className={styles.photo_container}>
         <div className={styles.toplayer}>
-          <Image src={src} alt={alt} />
+          <Image src={src} alt={alt} layout="fill"/>
         </div>
         <div className={styles.baselayer_one}></div>
         <div className={styles.baselayer_two}></div>

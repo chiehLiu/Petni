@@ -1,0 +1,35 @@
+@import '/styles/foundation.scss';
+
+.CardPetContainer {
+  display: flex;
+  width: 247px;
+  height: 70px;
+  background: $primaryWhite;
+  box-shadow: 0px 2px 7px rgba(10, 10, 10, 0.07);
+  border-radius: 23px;
+  margin-right: 9px;
+
+  &:last-child {
+    margin-right: unset;
+  }
+
+  .CardPet_left {
+    margin: 9.65px 12px;
+  }
+
+  .CardPet_right {
+    margin-top: 10.5px;
+
+    & .animalName{
+      @include Headline_EN;
+    }
+
+    & .area {
+      @include Caption_CN($primaryGrey);
+    }
+  }
+
+  .gender {
+    margin-top: 10.5px;
+  }
+}

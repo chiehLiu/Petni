@@ -1,20 +1,6 @@
 @import 'styles/foundation.scss';
 
-.SearchArea {
-  background: $primaryBackground_sorter;
-  width: 413px;
-  padding: 13.47px 30px 47px 83px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0px 2px 7px rgba(10, 10, 10, 0.07);
-}
-
-.color {
-  display: grid;
-  grid-template-columns: auto auto 30%;
-  grid-template-rows: auto auto;
-  gap: 8px;
-
+@mixin OvalBtn{
   button {
     width: 90px;
     height: 40px;
@@ -22,6 +8,48 @@
     box-shadow: 0px 2px 7px rgba(10, 10, 10, 0.07);
     border-radius: 14px;
   }
+}
+
+@mixin squareBtn {
+  height: 90px;
+
+  & Button:last-child {
+    position: absolute;
+  }
+}
+
+.SearchArea {
+  background: $primaryBackground_sorter;
+  width: 413px;
+  padding: 18.47px 35px 47px 88px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 7px rgba(10, 10, 10, 0.07);
+}
+
+.catOrDog {
+  @include squareBtn;
+}
+
+.gender {
+  @include squareBtn;
+}
+
+.age {
+  @include OvalBtn;
+
+  Button {
+    margin-right: 10px;
+  }
+}
+
+.color {
+  display: grid;
+  grid-template-columns: 90px 90px 90px;
+  grid-template-rows: auto auto;
+  gap: 10px;
+
+  @include OvalBtn;
 }
 
 .togglebtn {

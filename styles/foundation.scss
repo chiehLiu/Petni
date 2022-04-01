@@ -100,7 +100,7 @@ $primaryBackground_sorter: #fafafa;
   color: $primaryBlack;
 }
 
-@mixin Caption_CN {
+@mixin Caption_CN($fontColor) {
   /* Caption_CN */
 
   font-family: Noto Sans TC;
@@ -110,7 +110,7 @@ $primaryBackground_sorter: #fafafa;
   line-height: 21px;
   /* identical to box height, or 175% */
 
-  color: $primaryBlack;
+  color: $fontColor;
 }
 
 @mixin Title_CN_normal {

@@ -15,11 +15,13 @@ import { useState } from 'react';
 
 const SearchArea = () => {
 
-  const [isHovering, setIsHovered] = useState(false);
-  const onMouseEnter = () => setIsHovered(!isHovering);
-  const onMouseLeave = () => setIsHovered(!isHovering);
-
-  console.log(isHovering);
+  const [isHover, setIsHovered] = useState(false);
+  const onMouseEnter = () => {
+    setIsHovered(true);
+  };
+  const onMouseLeave = () => {
+    setIsHovered(false);
+  }
 
   return (
     <div className={styles.SearchArea}>
@@ -27,8 +29,8 @@ const SearchArea = () => {
         <SearchAreaTitle>我想尋找</SearchAreaTitle>
       </div>
       <div className={styles.catOrDog}>
-        <Button content={<Icon src={isHovering ? catWhite : catImg} alt={catImg}/>}  onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
-        <Button content={<Icon src={isHovering ? dogWhite : dogImg} alt={dogImg} />} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
+        <Button content={<Icon src={isHover ? catWhite : catImg} alt={catImg}/>}  onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
+        <Button content={<Icon src={isHover ? dogWhite: dogImg} alt={dogImg} />} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
         <Button content={'不拘'} onMouseEnter={()=>{}} onMouseLeave={()=>{}}></Button>
       </div>
       <div>
@@ -60,14 +62,14 @@ const SearchArea = () => {
         <Button content={'玳瑁貓'}></Button>
         <Button content={'不拘'}></Button>
       </div>
-      <div className={styles.togglebtn}>
+      <div className={styles.toggleBtn}>
         <SearchAreaTitle>搜尋附近</SearchAreaTitle>
         <label className={styles.switch}>
           <input type="checkbox" />
           <span className={`${styles.slider} ${styles.round}`}></span>
         </label>
       </div>
-      <div className={styles.togglebtn}>
+      <div className={styles.toggleBtn}>
         <SearchAreaTitle>互動音效</SearchAreaTitle>
         <label className={styles.switch}>
           <input type="checkbox" />

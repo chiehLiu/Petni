@@ -20,16 +20,17 @@
   .CardPet_right {
     margin-top: 10.5px;
 
-    & .animalName{
+    .animalName{
       @include Headline_EN;
+      margin-right: 8.15px;
     }
 
-    & .area {
+    .area {
       @include Caption_CN($primaryGrey);
     }
-  }
 
-  .gender {
-    margin-top: 10.5px;
+    .gender {
+      display: flex;
+    }
   }
 }

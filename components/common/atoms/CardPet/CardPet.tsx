@@ -21,11 +21,11 @@ const CardPet: FC<CardPetImgType> = ({ src = '', alt = '', animalName = '', area
         <Image src={src} alt={alt} />
       </div>
       <div className={styles.CardPet_right}>
-        <div className="animalName">{animalName}</div>
-        <div className="area">{area}</div>
-      </div>
-      <div className={styles.gender}>
-        <Icon src={gender_female} alt={'genderIcon'} className={styles.icon} />
+        <div className={styles.gender}>
+          <div className={styles.animalName}>{animalName}</div>
+          <Icon src={gender_female} alt={'genderIcon'} className={styles.icon} />
+        </div>
+        <div className={styles.area}>{area}</div>
       </div>
     </div>
   );

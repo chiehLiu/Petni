@@ -6,8 +6,8 @@ import styles from './Button.module.scss';
 type ButtonProps = {
   content: any;
   className?: string;
-  onMouseEnter:() => void;
-  onMouseLeave:() => void;
+  onMouseEnter?:() => void;
+  onMouseLeave?:() => void;
   onClick?: () => void;
 };
 

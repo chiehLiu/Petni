@@ -15,8 +15,6 @@ import { useState } from 'react';
 
 const SearchArea = () => {
 
-  let catOrDatId = 0;
-
   const [isHover, setIsHovered] = useState(false);
   const onMouseEnter = () => {
     setIsHovered(true);
@@ -24,7 +22,7 @@ const SearchArea = () => {
   const onMouseLeave = () => {
     setIsHovered(false);
   }
-
+2
   return (
     <div className={styles.SearchArea}>
       <div>

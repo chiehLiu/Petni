@@ -6,12 +6,12 @@
 
 .content_container {
   display: flex;
-  height: calc(100vh - 77.53px);
+  height: calc(100vh - 80px);
 }
 
 .content_area {
   display: flex;
   flex-direction: column;
-  width:calc(100vw - 413px);
+  width:calc(100vw - 415px);
   background-color: $primaryBackground;
 }

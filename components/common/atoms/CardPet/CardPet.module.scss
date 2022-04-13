@@ -2,12 +2,12 @@
 
 .CardPetContainer {
   display: flex;
-  width: 247px;
+  width: 250px;
   height: 70px;
   background: $primaryWhite;
   box-shadow: 0px 2px 7px rgba(10, 10, 10, 0.07);
   border-radius: 23px;
-  margin-right: 9px;
+  margin-right: 10px;
 
   &:last-child {
     margin-right: unset;
@@ -18,11 +18,11 @@
   }
 
   .CardPet_right {
-    margin-top: 10.5px;
+    margin-top: 10px;
 
     .animalName{
       @include Headline_EN;
-      margin-right: 8.15px;
+      margin-right: 8px;
     }
 
     .area {

@@ -12,20 +12,19 @@ type topLayerProps = {
 import detailBtn from '../../../../public/PhotoArea/detailBtn.svg';
 
 const PhotoArea: FC<topLayerProps> = ({ src = '', alt = '' }) => {
-
-  const toDetailPageHandler = () => {
-    
-  }
+  const toDetailPageHandler = () => {};
 
   return (
     <>
       <div className={styles.photo_container}>
         <div className={styles.topLayer}>
-          <Image src={src} alt={alt} layout="fill" />
           <div className={styles.detailBtn}>
             <Link href="/PetDetailPage" passHref>
-              <Image width={36} height={36} src={detailBtn} alt={detailBtn} onClick={toDetailPageHandler}/>
+              <Image src={detailBtn} alt={detailBtn} onClick={toDetailPageHandler}/>
             </Link>
+          </div>
+          <div>
+            <Image src={src} alt={alt} layout="fill"  objectFit="cover"/>
           </div>
         </div>
         <div className={styles.baseLayer_one}></div>

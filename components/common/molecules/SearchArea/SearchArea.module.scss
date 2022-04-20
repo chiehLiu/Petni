@@ -29,6 +29,22 @@
 
 .catOrDog {
   @include squareBtn;
+
+  .catOrDogButton {
+    & > div:nth-child(1) {
+      display: none;
+    }
+  
+    @include hover {
+      & > div:nth-child(1) {
+        display: block;
+      }
+  
+      & > div:nth-child(2) {
+        display: none;
+      }
+    }
+  }
 }
 
 .gender {

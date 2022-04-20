@@ -19,8 +19,10 @@ const PhotoArea: FC<topLayerProps> = ({ src = '', alt = '' }) => {
       <div className={styles.photo_container}>
         <div className={styles.topLayer}>
           <div className={styles.detailBtn}>
-            <Link href="/PetDetailPage" passHref>
-              <Image src={detailBtn} alt={detailBtn} onClick={toDetailPageHandler}/>
+            <Link href="/PetDetail" passHref>
+              <a>
+                <Image src={detailBtn} alt={detailBtn} onClick={toDetailPageHandler} priority/>
+              </a>
             </Link>
           </div>
           <Image src={src} alt={alt}/>

@@ -11,35 +11,17 @@ import dogImg from '../../../../public/AnimalIcon/dogBlack.svg';
 import dogWhite from '../../../../public/AnimalIcon/dogWhite.svg';
 
 import styles from './SearchArea.module.scss';
-import { useState } from 'react';
 import loadConfig from 'next/dist/server/config';
 
 const SearchArea = () => {
-
-  const [isCatImgHover, setIsCatImgHover] = useState(false);
-  const [isDogImgHover, setIsDogImgHover] = useState(false);
-
-  const onMouseEnter = () => {
-    setIsCatImgHover(true);
-  };
-  const onMouseLeave = () => {
-    setIsCatImgHover(false);
-  }
-
-  const onMouseEnterDogImg = () => {
-    setIsDogImgHover(true);
-  };
-  const onMouseLeaveDogImg = () => {
-    setIsDogImgHover(false);
-  }
   return (
     <div className={styles.SearchArea}>
       <div>
         <SearchAreaTitle>我想尋找</SearchAreaTitle>
       </div>
       <div className={styles.catOrDog}>
-        <Button id={'catImg'} content={isCatImgHover ?  <Icon src={catWhite} alt="catWhiteImg"/>: <Icon src={catImg} alt="catImg"/>}  onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
-        <Button id={'dogImg'} content={isDogImgHover ?  <Icon src={dogWhite} alt="dogWhiteImg"/>: <Icon src={dogImg} alt="dogImg"/>} onMouseEnter={onMouseEnterDogImg} onMouseLeave={onMouseLeaveDogImg} />
+        <Button className={styles.catOrDogButton} content={<><Icon src={catWhite} alt="catWhiteImg"/> <Icon src={catImg} alt="catImg"/></>} />
+        <Button className={styles.catOrDogButton} content={<><Icon src={dogWhite} alt="dogWhiteImg"/> <Icon src={dogImg} alt="dogImg"/></>} />
         <Button content={'不拘'} />
       </div>
       <div>

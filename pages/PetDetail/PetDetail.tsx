@@ -3,17 +3,17 @@ import Header from '../../components/common/molecules/Header';
 import Button from '../../components/common/atoms/Button';
 import Icon from '../../components/common/atoms/Icon';
 
-import styles from './PetDetailPage.module.scss';
+import styles from './PetDetail.module.scss';
 
-import petAviator from '../../public/PetDetailPage/petAviator.svg';
-import closeBtn from '../../public/PetDetailPage/closeBtn.svg';
-import heart from '../../public/PetDetailPage/Heart.svg';
-import bagImg from '../../public/PetDetailPage/bagImg.svg';
-import palette from '../../public/PetDetailPage/palette.svg';
+import petAviator from '../../public/PetDetail/petAviator.svg';
+import closeBtn from '../../public/PetDetail/closeBtn.svg';
+import heart from '../../public/PetDetail/Heart.svg';
+import bagImg from '../../public/PetDetail/bagImg.svg';
+import palette from '../../public/PetDetail/palette.svg';
 import genderFemale from '../../public/GenderIcon/gender-female.svg';
 import Link from 'next/link';
 
-const PetDetailPage = () => {
+const PetDetail = () => {
   return (
     <>
       <Header />
@@ -72,4 +72,4 @@ const PetDetailPage = () => {
   );
 };
 
-export default PetDetailPage;
+export default PetDetail;

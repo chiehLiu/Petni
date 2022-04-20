@@ -23,9 +23,7 @@ const PhotoArea: FC<topLayerProps> = ({ src = '', alt = '' }) => {
               <Image src={detailBtn} alt={detailBtn} onClick={toDetailPageHandler}/>
             </Link>
           </div>
-          <div>
-            <Image src={src} alt={alt} layout="fill"  objectFit="cover"/>
-          </div>
+          <Image src={src} alt={alt}/>
         </div>
         <div className={styles.baseLayer_one}></div>
         <div className={styles.baseLayer_two}></div>

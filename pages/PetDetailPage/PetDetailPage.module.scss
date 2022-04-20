@@ -1,0 +1,104 @@
+@import 'styles/foundation.scss';
+
+.petDetailPageContent {
+  background-color: $primaryBackground;
+  padding: 50px 200px 90px;
+  height: calc(100vh - 85px);
+  display: flex;
+  gap: 25px;
+
+  .closePetDetailPageBtn {
+    background-color: $primaryBlack;
+    box-shadow: 0px 2px 7px rgba(10, 10, 10, 0.07);
+    border-radius: 50px;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 10%;
+    left: 90%;
+  }
+
+  .petAviator {
+    width: 50%;
+    border-radius: 32px;
+    overflow: hidden;
+    position: relative;
+    border: 18px solid $primaryWhite;
+  }
+
+  .petInfo {
+    width: 50%;
+
+    .petName {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px 0;
+
+      .nameCard {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .name {
+      }
+
+      .address {
+      }
+
+      .addToFavorite {
+        background: $primaryWhite;
+        box-shadow: 0px 2px 7px rgba(10, 10, 10, 0.07);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .follower {
+      background: $primaryWhite;
+      box-shadow: 0px 2px 7px rgba(10, 10, 10, 0.07);
+      border-radius: 20px;
+      padding: 30px 25px;
+      display: flex;
+      justify-content: space-between;
+
+      & :first-child {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .seriesFollower {
+        text-align: right;
+      }
+    }
+  }
+
+  .petInfoCard {
+    display: flex;
+    justify-content: space-around;
+    background: $primaryWhite;
+    box-shadow: 0px 2px 7px rgba(10, 10, 10, 0.07);
+    border-radius: 20px;
+    padding: 30px 25px;
+    margin: 15px 0;
+
+    &> div {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+
+    .bagImg,
+    .genderFemale,
+    .palette {
+      background-color: $primaryBackground;
+      border-radius: 50px;
+      width: 70px;
+      height: 70px;
+    }
+  }
+}

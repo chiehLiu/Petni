@@ -22,7 +22,7 @@ $primaryBackground_sorter: #fafafa;
   }
 }
 
-@mixin Body_EN {
+@mixin Body_EN($color:$primaryBlack) {
   /* Body_EN */
   font-family: Roboto;
   font-style: normal;
@@ -30,7 +30,7 @@ $primaryBackground_sorter: #fafafa;
   @include font(14);
   line-height: 21px;
   /* identical to box height, or 150% */
-  color: $primaryBlack;
+  color: $color;
 }
 
 @mixin Body_CN {
@@ -85,13 +85,13 @@ $primaryBackground_sorter: #fafafa;
   color: $primaryBlack;
 }
 
-@mixin Title_EN {
+@mixin Title_EN ($fontSize: 18, $fontWeight:500) {
   /* Title_EN */
 
   font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
-  @include font(18);
+  font-weight: $fontWeight;
+  @include font($fontSize);
   line-height: 27px;
   /* identical to box height, or 150% */
 

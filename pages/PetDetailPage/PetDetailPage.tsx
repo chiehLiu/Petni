@@ -11,16 +11,19 @@ import heart from '../../public/PetDetailPage/Heart.svg';
 import bagImg from '../../public/PetDetailPage/bagImg.svg';
 import palette from '../../public/PetDetailPage/palette.svg';
 import genderFemale from '../../public/GenderIcon/gender-female.svg';
+import Link from 'next/link';
 
 const PetDetailPage = () => {
   return (
     <>
       <Header />
       <div className={styles.petDetailPageContent}>
-        <Button
-          className={styles.closePetDetailPageBtn}
-          content={<Icon src={closeBtn} alt="closePetDetailPageBtn"></Icon>}
-        />
+        <Link href="/" passHref>
+          <Button
+            className={styles.closePetDetailPageBtn}
+            content={<Icon src={closeBtn} alt="closePetDetailPageBtn"></Icon>}
+          />
+        </Link>
         <div className={styles.petAviator}>
           <Image src={petAviator} alt="petAviator" className={styles.petImg} layout="fill" objectFit="cover" />
         </div>
@@ -46,28 +49,23 @@ const PetDetailPage = () => {
           </div>
           <div className={styles.petInfoCard}>
             <div>
-              <Button
-                className={styles.bagImg}
-                content={<Icon src={bagImg} alt="bagImg"></Icon>}
-              />
+              <Button className={styles.bagImg} content={<Icon src={bagImg} alt="bagImg"></Icon>} />
               <span>求包養</span>
             </div>
             <div>
-              <Button
-                className={styles.genderFemale}
-                content={<Icon src={genderFemale} alt="genderFemale"></Icon>}
-              />
+              <Button className={styles.genderFemale} content={<Icon src={genderFemale} alt="genderFemale"></Icon>} />
               <span>女生</span>
             </div>
             <div>
-              <Button
-                className={styles.palette}
-                content={<Icon src={palette} alt="palette"></Icon>}
-              />
+              <Button className={styles.palette} content={<Icon src={palette} alt="palette"></Icon>} />
               <span>黑白色</span>
             </div>
           </div>
-          <div className={styles.contactInfo}></div>
+          <div className={styles.contactInfo}>
+            <span>03-4861 760</span>
+            <span>桃園市新屋區永興里3鄰藻礁路1668號</span>
+            <span>本站動物皆採現場互動面談後評估能否認養，不接受系統上的預約。</span>
+          </div>
         </div>
       </div>
     </>

@@ -16,40 +16,30 @@ import loadConfig from 'next/dist/server/config';
 
 const SearchArea = () => {
 
-  const [isHover, setIsHovered] = useState(false);
+  const [isCatImgHover, setIsCatImgHover] = useState(false);
+  const [isDogImgHover, setIsDogImgHover] = useState(false);
 
-  const onMouseEnter = (e:any) => {
-
-    // if (e.target.id === 'dogImg') {
-    //   let dogImg1 = <Icon src={catWhite} alt="catImg"/>;
-    //   return dogImg1;
-    // }
-    // if (e.target.id === 'catImg') {
-    //   let catImg1 = <Icon src={dogWhite} alt="dogImg" />;
-    //   return catImg1;
-    // }
-
-    // // console.log(catImg1)
-
-    // // console.log(e);
-    // console.log(e.target.id)
-
-    
-    setIsHovered(true);
-
+  const onMouseEnter = () => {
+    setIsCatImgHover(true);
   };
-  const onMouseLeave = (e:any) => {
-    setIsHovered(false);
+  const onMouseLeave = () => {
+    setIsCatImgHover(false);
   }
 
+  const onMouseEnterDogImg = () => {
+    setIsDogImgHover(true);
+  };
+  const onMouseLeaveDogImg = () => {
+    setIsDogImgHover(false);
+  }
   return (
     <div className={styles.SearchArea}>
       <div>
         <SearchAreaTitle>我想尋找</SearchAreaTitle>
       </div>
       <div className={styles.catOrDog}>
-        <Button id={'catImg'} content={<Icon src={catImg} alt="catImg"/>}  onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
-        <Button id={'dogImg'} content={<Icon src={dogImg} alt="dogImg" />} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
+        <Button id={'catImg'} content={isCatImgHover ?  <Icon src={catWhite} alt="catWhiteImg"/>: <Icon src={catImg} alt="catImg"/>}  onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
+        <Button id={'dogImg'} content={isDogImgHover ?  <Icon src={dogWhite} alt="dogWhiteImg"/>: <Icon src={dogImg} alt="dogImg"/>} onMouseEnter={onMouseEnterDogImg} onMouseLeave={onMouseLeaveDogImg} />
         <Button content={'不拘'} />
       </div>
       <div>

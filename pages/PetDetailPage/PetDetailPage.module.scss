@@ -6,6 +6,8 @@
   height: calc(100vh - 85px);
   display: flex;
   gap: 25px;
+  display: flex;
+  justify-content: center;
 
   .closePetDetailPageBtn {
     background-color: $primaryBlack;
@@ -14,8 +16,8 @@
     height: 60px;
     width: 60px;
     position: absolute;
-    top: 10%;
-    left: 90%;
+    top: 100px;
+    right: 60px;
   }
 
   .petAviator {
@@ -24,10 +26,15 @@
     overflow: hidden;
     position: relative;
     border: 18px solid $primaryWhite;
+    max-width: 430px;
+    max-height: 580px;
+    box-shadow: 0px 2px 7px rgba(10, 10, 10, 0.07);
   }
 
   .petInfo {
     width: 50%;
+    max-width: 430px;
+    max-height: 580px;
 
     .petName {
       display: flex;
@@ -40,9 +47,11 @@
       }
 
       .name {
+        @include Title_EN
       }
 
       .address {
+        @include Body_CN
       }
 
       .addToFavorite {
@@ -67,8 +76,18 @@
         flex-direction: column;
       }
 
+      .seriesNumber,
+      .seriesFollower {
+        @include Title_EN(20, 700);
+      }
+
       .seriesFollower {
         text-align: right;
+      }
+
+      .seriesDate,
+      .seriesLabel {
+        @include Body_EN($primaryGrey);
       }
     }
   }
@@ -79,8 +98,12 @@
     background: $primaryWhite;
     box-shadow: 0px 2px 7px rgba(10, 10, 10, 0.07);
     border-radius: 20px;
-    padding: 30px 25px;
-    margin: 15px 0;
+    padding: 25px;
+    margin: 20px 0;
+
+    button {
+      margin: 0;
+    }
 
     &> div {
       display: flex;
@@ -89,6 +112,7 @@
       span {
         text-align: center;
         margin-top: 10px;
+        @include Headline_CN
       }
     }
 
@@ -100,5 +124,25 @@
       width: 70px;
       height: 70px;
     }
+  }
+
+  .contactInfo {
+    background: $primaryWhite;
+    box-shadow: 0px 2px 7px rgba(10, 10, 10, 0.07);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+
+    & :last-child {
+      @include Body_CN;
+    }
+
+    span {
+      margin-bottom: 10px;
+      @include Headline_CN;
+    }
+
   }
 }

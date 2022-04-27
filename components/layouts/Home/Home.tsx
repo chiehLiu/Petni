@@ -15,9 +15,9 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsEnterPage((preState) => !preState);
-    }, 3000);
+    }, 500);
   }, []);
-
+  
   return (
     <div className={styles.container}>
       <Header />

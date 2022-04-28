@@ -18,7 +18,7 @@ const CardPet: FC<CardPetImgType> = ({ src = '', alt = '', animalName = '', area
   return (
     <div className={styles.CardPetContainer}>
       <div className={styles.CardPet_left}>
-        <Image src={src} alt={alt} />
+        <Image src={src} alt={alt} width={50} height={50}/>
       </div>
       <div className={styles.CardPet_right}>
         <div className={styles.gender}>

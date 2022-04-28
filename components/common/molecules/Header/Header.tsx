@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import { FC } from 'react';
 
-import logo from '../../../../public/Header/header_logo.svg';
-import home from '../../../../public/Header/home.svg';
-import favorite from '../../../../public/Header/favorites.svg';
-import pavilion from '../../../../public/Header/pavilion.svg';
-import rescue from '../../../../public/Header/rescue.svg';
-import hospital from '../../../../public/Header/hospital.svg';
+import logo from '/public/Header/header_logo.svg';
+import home from '/public/Header/home.svg';
+import favorite from '/public/Header/favorites.svg';
+import pavilion from '/public/Header/pavilion.svg';
+import rescue from '/public/Header/rescue.svg';
+import hospital from '/public/Header/hospital.svg';
 
 import styles from './Header.module.scss';
 import Link from 'next/link';

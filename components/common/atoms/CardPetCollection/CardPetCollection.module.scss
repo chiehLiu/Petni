@@ -1,1 +1,42 @@
 @import '../../../../styles/foundation.scss';
+
+.collectionContainer {
+  background-color: $primaryWhite;
+  margin-right: 10px;
+  box-shadow: 0px 2px 7px rgba(10, 10, 10, 0.07);
+  border-radius: 28px;
+  width: 165px;
+  height: 215px;
+  padding: 10px 12px;
+  position: relative;
+
+  .collection_left {
+    text-align: center;
+  }
+
+  .collection_right {
+
+    .animalName{
+      @include Headline_EN;
+      margin-right: 8px;
+    }
+
+    .area {
+      @include Caption_CN($primaryGrey);
+    }
+
+    .gender {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.deleteBtn {
+  width: 25px;
+  height: 25px;
+  @include font(6);
+  position: absolute;
+  top: 10%;
+  left: 70%;
+}

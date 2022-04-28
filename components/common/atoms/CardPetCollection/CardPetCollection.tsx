@@ -1,14 +1,38 @@
 import Image from 'next/image';
-import {FC} from 'react';
+import { FC } from 'react';
 import Button from '../Button';
-import CardPet from '../CardPet/CardPet';
+import Icon from '../Icon';
 
 import styles from './CardPetCollection.module.scss';
 
-const CardPetCollection = () => {
+import gender_female from '/public/GenderIcon/gender-female.svg';
+import gender_male from '/public/GenderIcon/gender-male.svg';
+
+type CardPetCollectionType = {
+  src: string;
+  alt: string;
+  animalName: string;
+  area: string;
+};
+
+const CardPetCollection: FC<CardPetCollectionType> = ({ src = '', alt = '', animalName = '', area = ''}) => {
   return (
-    <div>123</div>
-  )
-}
+    <div key={animalName}>
+      <div className={styles.collectionContainer}>
+        <div className={styles.collection_left}>
+          <Image src={src} alt={alt} width={140} height={140} />
+        </div>
+        <div className={styles.collection_right}>
+          <div className={styles.gender}>
+            <div className={styles.animalName}>{animalName}</div>
+            <Icon src={gender_male} alt={'genderIcon'} className={styles.icon} />
+          </div>
+          <div className={styles.area}>{area}</div>
+        </div>
+        <Button content={'x'} className={styles.deleteBtn}/>
+      </div>
+    </div>
+  );
+};
 
 export default CardPetCollection;

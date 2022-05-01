@@ -24,7 +24,7 @@ const PetCollection: FC = () => {
 
   return (
     <>
-      <ForRescueAndCollection>
+      {/* <ForRescueAndCollection>
         {dummyCollection.map((list) => {
           return (
             <>
@@ -37,7 +37,7 @@ const PetCollection: FC = () => {
             </>
           );
         })}
-    <ForRescueAndCollection>
+    <ForRescueAndCollection> */}
     </>
   );
 };

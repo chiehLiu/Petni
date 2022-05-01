@@ -1,4 +1,7 @@
 import {FC} from 'react';
+import Header from '../../common/molecules/Header';
+
+import styles from './ForRescueAndCollection.module.scss';
 
 const ForRescueAndCollection:FC = (content) => {
   return (

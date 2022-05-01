@@ -6,6 +6,7 @@ import Header from '../../components/common/molecules/Header';
 import CardPetCollection from '../../components/common/atoms/CardPetCollection';
 
 import dummyCollectionImg from '/public/PetCollection/dummyCollectionImg.svg';
+import ForRescueAndCollection from '../../components/layouts/ForRescueAndCollection';
 
 const PetCollection: FC = () => {
   const dummyCollection: {
@@ -24,20 +25,15 @@ const PetCollection: FC = () => {
 
   return (
     <>
-      {/* <ForRescueAndCollection>
+      <ForRescueAndCollection>
         {dummyCollection.map((list) => {
           return (
             <>
-              <CardPetCollection
-                src={list.src}
-                animalName={list.name}
-                area={list.location}
-                alt={list.name}
-              />
+              <CardPetCollection src={list.src} animalName={list.name} area={list.location} alt={list.name} />
             </>
           );
         })}
-    <ForRescueAndCollection> */}
+      </ForRescueAndCollection>
     </>
   );
 };

@@ -24,8 +24,7 @@ const PetCollection: FC = () => {
 
   return (
     <>
-      <Header></Header>
-      <div className={styles.CardPetCollectionLayout}>
+      <ForRescueAndCollection>
         {dummyCollection.map((list) => {
           return (
             <>
@@ -38,7 +37,7 @@ const PetCollection: FC = () => {
             </>
           );
         })}
-      </div>
+    <ForRescueAndCollection>
     </>
   );
 };

@@ -2,11 +2,10 @@ import styles from './PetCollection.module.scss';
 
 import { FC } from 'react';
 
-import Header from '../../components/common/molecules/Header';
 import CardPetCollection from '../../components/common/atoms/CardPetCollection';
 
 import dummyCollectionImg from '/public/PetCollection/dummyCollectionImg.svg';
-import ForRescueAndCollection from '../../components/layouts/ForRescueAndCollection';
+import LayoutForContent from '../../components/layouts/LayoutForContent';
 
 const PetCollection: FC = () => {
   const dummyCollection: {
@@ -25,19 +24,16 @@ const PetCollection: FC = () => {
 
   const CardPetCollectionList = dummyCollection.map((list) => {
     return (
-      <CardPetCollection src={list.src} animalName={list.name} area={list.location} alt={list.name} key={list.name} />
+      <>
+        <CardPetCollection src={list.src} animalName={list.name} area={list.location} alt={list.name} key={list.name}/>
+      </>
     );
   });
 
-  console.log(CardPetCollectionList);
-
   return (
-    <>
-      <Header/>
-      <div className={styles.collectionListContainer}>
-        {CardPetCollectionList}
-      </div>
-    </>
+    <LayoutForContent className={styles.CardPetCollectionListLayout}>
+      {CardPetCollectionList}
+    </LayoutForContent>
   );
 };
 

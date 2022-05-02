@@ -1,14 +1,14 @@
 import { FC } from 'react';
 
 import Header from '../../components/common/molecules/Header';
+import LayoutForContent from '../../components/layouts/LayoutForContent';
 import styles from './PetPavilion.module.scss';
 
 const PetPavilion: FC = () => {
   return(
-    <>
-      <Header></Header>
+    <LayoutForContent>
       <div>123</div>
-    </>
+    </LayoutForContent>
   )
 }
 

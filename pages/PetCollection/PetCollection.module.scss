@@ -6,5 +6,9 @@
   flex-wrap: wrap;
   background-color: $primaryBackground;
   height: calc(100vh - 84px);
-  align-content: start;
+  align-content: flex-start;
+}
+
+.CardPetCollectionListLayout {
+  align-content: flex-start;
 }

@@ -1,0 +1,9 @@
+@import '/styles/foundation.scss';
+
+.layoutForContent {
+  display: flex;
+  background-color: $primaryBackground;
+  height: calc(100vh - 85px);
+  padding: 45px 85px;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,27 @@
+@import '/styles/foundation.scss';
+
+
+.hospitalCardContainer{
+
+  display: flex;
+  padding: 12px;
+
+  .hospital_left {
+    .hospitalName {
+      margin-bottom: 8px;
+      @include Headline_CN;
+    }
+
+    .hospitalPhone {
+      @include Body_EN;
+    }
+  }
+
+  .hospital_right{
+  
+    .phoneBtn {
+      border-radius: 50px;
+      background-color: $primaryBlack;
+    }
+  }
+}

@@ -1,11 +1,14 @@
+import Button from '../../components/common/atoms/Button';
 import Header from '../../components/common/molecules/Header';
+import LayoutForContent from '../../components/layouts/LayoutForContent';
 import styles from './PetRescue.module.scss';
 
 const PetRescue = () => {
   return (
     <>
-      <Header/>
-      <div>123</div>
+      <LayoutForContent>
+        <div>123</div>
+      </LayoutForContent>
     </>
   )
 }

@@ -1,9 +1,10 @@
 @import '/styles/foundation.scss';
 
-.CardPetCollectionLayout {
+.collectionListContainer {
   padding: 45px 120px;
   display: flex;
   flex-wrap: wrap;
   background-color: $primaryBackground;
   height: calc(100vh - 84px);
+  align-content: start;
 }

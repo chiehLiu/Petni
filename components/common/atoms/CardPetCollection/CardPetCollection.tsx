@@ -15,22 +15,20 @@ type CardPetCollectionType = {
   area: string;
 };
 
-const CardPetCollection: FC<CardPetCollectionType> = ({ src = '', alt = '', animalName = '', area = ''}) => {
+const CardPetCollection: FC<CardPetCollectionType> = ({ src = '', alt = '', animalName = '', area = '' }) => {
   return (
-    <div key={animalName}>
-      <div className={styles.collectionContainer}>
-        <div className={styles.collection_left}>
-          <Image src={src} alt={alt} width={140} height={140} />
-        </div>
-        <div className={styles.collection_right}>
-          <div className={styles.gender}>
-            <div className={styles.animalName}>{animalName}</div>
-            <Icon src={gender_male} alt={'genderIcon'} className={styles.icon} />
-          </div>
-          <div className={styles.area}>{area}</div>
-        </div>
-        <Button content={'x'} className={styles.deleteBtn}/>
+    <div className={styles.collectionContainer}>
+      <div className={styles.collection_left}>
+        <Image src={src} alt={alt} width={140} height={140} />
       </div>
+      <div className={styles.collection_right}>
+        <div className={styles.gender}>
+          <div className={styles.animalName}>{animalName}</div>
+          <Icon src={gender_male} alt={'genderIcon'} className={styles.icon} />
+        </div>
+        <div className={styles.area}>{area}</div>
+      </div>
+      <Button content={'x'} className={styles.deleteBtn} />
     </div>
   );
 };

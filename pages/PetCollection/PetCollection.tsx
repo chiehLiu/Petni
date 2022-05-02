@@ -23,17 +23,20 @@ const PetCollection: FC = () => {
     { name: 'test6', gender: 'male', location: '台南市南區', src: dummyCollectionImg },
   ];
 
+  const CardPetCollectionList = dummyCollection.map((list) => {
+    return (
+      <CardPetCollection src={list.src} animalName={list.name} area={list.location} alt={list.name} key={list.name} />
+    );
+  });
+
+  console.log(CardPetCollectionList);
+
   return (
     <>
-      <ForRescueAndCollection>
-        {dummyCollection.map((list) => {
-          return (
-            <>
-              <CardPetCollection src={list.src} animalName={list.name} area={list.location} alt={list.name} />
-            </>
-          );
-        })}
-      </ForRescueAndCollection>
+      <Header/>
+      <div className={styles.collectionListContainer}>
+        {CardPetCollectionList}
+      </div>
     </>
   );
 };

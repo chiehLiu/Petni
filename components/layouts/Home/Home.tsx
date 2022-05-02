@@ -3,13 +3,15 @@ import SearchArea from '../../common/molecules/SearchArea';
 import PhotoArea from '../../common/molecules/PhotoArea/PhotoArea';
 import OtherArea from '../../common/molecules/OtherArea';
 
+import {FC} from 'react';
+
 import PhotoAreaImage from '../../../public/PhotoArea/PhotoAreaImage.svg';
 
 import styles from './Home.module.scss';
 import EnterPageAnimate from '../../common/organisms/EnterPageAnimate';
 import { useEffect, useState } from 'react';
 
-const Home = () => {
+const Home: FC = () => {
   const [isEnteringPage, setIsEnterPage] = useState(true);
 
   useEffect(() => {

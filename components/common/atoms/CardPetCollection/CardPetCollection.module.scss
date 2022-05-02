@@ -3,12 +3,17 @@
 .collectionContainer {
   background-color: $primaryWhite;
   margin-right: 10px;
+  margin-top: 10px;
   box-shadow: 0px 2px 7px rgba(10, 10, 10, 0.07);
   border-radius: 28px;
   width: 165px;
   height: 215px;
   padding: 10px 12px;
   position: relative;
+
+  &:last-child {
+    margin-right: unset;
+  }
 
   .collection_left {
     text-align: center;

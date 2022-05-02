@@ -9,21 +9,13 @@ type ButtonProps = {
   onClick?: () => void;
 };
 
-const Button: FC<ButtonProps> = forwardRef(
-  (
-    { className = '', content = '', onClick = () => {}},
-    ref
-  ) => {
-    return (
-      <button
-        className={classnames(styles.button, className)}
-        onClick={onClick}
-      >
-        {content}
-      </button>
-    );
-  }
-);
+const Button: FC<ButtonProps> = forwardRef(({ className = '', content = '', onClick = () => {} }, ref) => {
+  return (
+    <button className={classnames(styles.button, className)} onClick={onClick}>
+      {content}
+    </button>
+  );
+});
 
 Button.displayName = 'Button';
 
